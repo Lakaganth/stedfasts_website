@@ -1,5 +1,10 @@
 import React from "react";
-import { HomeOperationContainer, OperationGrid, OpContent } from "./HomeStyles";
+import {
+  HomeOperationContainer,
+  OperationGrid,
+  OpContent,
+  MobileOperationGrid,
+} from "./HomeStyles";
 import Op1 from "../../assets/operation1.png";
 import Op2 from "../../assets/operation2.png";
 import Op3 from "../../assets/operation3.png";
@@ -47,6 +52,41 @@ export const HomeOperation = () => {
           opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
         />
       </OperationGrid>
+      <MobileOperationGrid>
+        <ScrollAnimation animateIn="zoomInLeft">
+          <img src={Op1} alt="Fast Delivery" />
+        </ScrollAnimation>
+        <OperationContent
+          opTitle="Super-fast Delivery"
+          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+        />
+        <ScrollAnimation animateIn="slideInRight">
+          <img
+            src={Op2}
+            alt="Deliver
+            Documents 
+            & Packages"
+          />
+        </ScrollAnimation>
+        <OperationContent
+          opTitle="Deliver
+          Documents 
+          & Packages"
+          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+        />
+        <ScrollAnimation animateIn="slideInLeft">
+          <img
+            src={Op3}
+            alt="Warehouse
+          Fulfillment"
+          />
+        </ScrollAnimation>
+        <OperationContent
+          opTitle="Warehouse
+          Fulfillment"
+          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+        />
+      </MobileOperationGrid>
     </HomeOperationContainer>
   );
 };

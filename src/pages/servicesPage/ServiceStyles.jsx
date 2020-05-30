@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import ServicesBG from "../../assets/services_bg.png";
 
 export const Container = styled.div`
@@ -17,6 +18,14 @@ export const ServiceHeroContainer = styled.div`
   background-size: cover;
   padding: 20vh 0;
   border-radius: 0 0 150px 150px; 
+
+  ${media.lessThan("small")`
+  display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  `}
+
 
   .content {
     p:nth-child(1) {
@@ -42,6 +51,10 @@ export const ServiceHeroContainer = styled.div`
   .hero-img{
     img{
       width:120%;
+      ${media.lessThan("small")`
+      width:100%;
+  `}
+
     }
   }
 `;
@@ -63,6 +76,16 @@ export const SerBox = styled.div`
   font-weight: bold;
   margin: 5vh 5vw;
   padding: 5vh 0;
+
+  ${media.lessThan("small")`
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   img{
+     width:100%;
+   }
+  `}
 
   .content {
     padding: 0 5vw;
@@ -88,7 +111,6 @@ export const SerBox = styled.div`
       font-weight: 500;
       font-size: 24px;
       line-height: 29px;
-      text-transform: uppercase;
       color: #e4e4e4;
     }
   }

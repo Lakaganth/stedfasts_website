@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import AdvantageHero from "../../assets/advantage_hero.png";
 
 export const Container = styled.div`
@@ -7,16 +8,18 @@ export const Container = styled.div`
 `;
 
 export const AdvantageHeroContainer = styled.div`
-/* padding:0 0 100vh 0;  */
-  .curved-container {
 
+  .curved-container {
     width: 100%;
     height: 120vh;    
     background:url('${AdvantageHero}') no-repeat center center fixed;
-  background-size: cover;  
+    background-size: cover;  
     border-radius: 0px 0px 150px 150px;
     text-align: center;
     padding: 20vh 15vw; 
+    ${media.lessThan("small")`
+    background: linear-gradient(180deg, #5928BE 0%, rgba(89, 40, 190, 0.59) 100%);
+  `}
 
 
     .title {
@@ -50,6 +53,13 @@ export const AdvantageBoxPage = styled.div`
     img {
       width: 100%;
     }
+    ${media.lessThan("small")`
+    padding: 10vh 1vw;
+    img{
+      width: 100%;
+    }
+  `}
+
     .content-div {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -87,6 +97,12 @@ export const AdBox = styled.div`
   justify-items: center;
   align-items: center;
   overflow: hidden;
+  ${media.lessThan("small")`
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  `}
 
   img {
     width: 100%;

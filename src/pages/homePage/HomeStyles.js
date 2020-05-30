@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
+import media from "styled-media-query";
 import Bg from "../../assets/bg.png";
 
 import fadeInDown from "react-animations/lib/fadeInDown";
 import bounceInUp from "react-animations/lib/bounceInUp";
-// import fadeInDown from "react-animations/lib/fadeInDown";
 
 export const Container = styled.div`
   width: 100vw;
@@ -24,18 +24,26 @@ grid-template-columns: 1fr 1fr;
 justify-items:center;
 align-items:center;
 overflow: hidden;
-
 animation: .5s ${HeroContainerFadeInDownAnimation};
 
+${media.lessThan("small")` 
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items:flex-start;
+   background:url('${Bg}') no-repeat center top fixed;
+   `}
 
 
 .hero-content{
     text-align:left;
     width: 50%;
     padding-top: 10vh;
-    /* padding: 0 0 0 100px; */
-    /* animation: 1s ${HeroContentFade};
-    animation-delay: 1.5s; */
+
+    ${media.lessThan("small")` 
+    margin-left: 20px;
+    width: 70%;
+   `}
 
     p:nth-child(1){
         font-family: Red Hat Text;
@@ -48,6 +56,11 @@ animation: .5s ${HeroContainerFadeInDownAnimation};
         margin: 0 0 20px 0;
         animation: 1s ${HeroContentFade};        
     animation-delay: 0s;
+    ${media.lessThan("small")` 
+    font-size: 32px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+   `}
     }
 
     p:nth-child(2){
@@ -61,6 +74,10 @@ animation: .5s ${HeroContainerFadeInDownAnimation};
         margin: 0 0 70px 0;
         animation: 1s ${HeroContentFade};
     animation-delay: 0.2s;
+    ${media.lessThan("small")` 
+    font-size: 34px;
+    margin: 0 0 10px 0;
+   `}
     }
     p:nth-child(3){
         font-family: Red Hat Text;
@@ -72,6 +89,11 @@ animation: .5s ${HeroContainerFadeInDownAnimation};
         margin: 0 0 70px 0;
         animation: 1s ${HeroContentFade};
     animation-delay: 0.3s;
+    ${media.lessThan("small")` 
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0 0 30px 0;
+   `}
        
     }
     button{
@@ -79,6 +101,7 @@ animation: .5s ${HeroContainerFadeInDownAnimation};
         height: 73px;
         background: linear-gradient(290.87deg, #E9AA0A 26.58%, #FFC163 95.68%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border:none;
         border-radius: 10px;
         font-family: Montserrat;
         font-style: normal;
@@ -88,21 +111,38 @@ animation: .5s ${HeroContainerFadeInDownAnimation};
         color: #FFFFFF;
         animation: 1s ${HeroContentFade};
     animation-delay: 0.4s;
+    ${media.lessThan("small")` 
+    width: 175px;
+        height: 50px;
+        font-weight: 400;        
+   `}
     }
 
-    
+ 
+
 
 }
 .hero-img{
   /* opacity:0; */
       animation: 1s ${HeroImageFade};
     animation-delay: 0.1s;
+    ${media.lessThan("small")` 
+    img{
+      margin: 0 20%;
+    width: 70%;
     }
+     
+   `}
+} 
 `;
 
 export const HeroTrailing = styled.div`
   /* height: 20vh; */
   margin-top: 5vh;
+  ${media.lessThan("small")`
+  margin-top: 2vh;
+  `}
+
   p {
     font-family: Montserrat;
     font-style: normal;
@@ -110,6 +150,11 @@ export const HeroTrailing = styled.div`
     font-size: 52px;
     line-height: 63px;
     text-align: center;
+    ${media.lessThan("small")`
+    font-size: 32px;
+    line-height: 33px;
+    padding: 0 10vw;
+  `}
   }
   p:nth-child(2) {
     color: #ffb904;
@@ -123,6 +168,13 @@ export const FeatureGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  ${media.lessThan("small")`
+  display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   margin: 3vh 0;
+  `}
 `;
 
 export const FeatureBox = styled.div`
@@ -137,10 +189,12 @@ export const FeatureBox = styled.div`
   justify-content: center;
   align-items: center;
   font-family: Montserrat;
-
   text-align: center;
-
   transition: all 0.3s ease-in-out;
+
+  ${media.lessThan("small")`
+   margin: 3vh 0;
+  `}
 
   p:nth-child(2) {
     font-weight: 600;
@@ -189,6 +243,11 @@ export const QualityContainer = styled.div`
   background: linear-gradient(127.36deg, #3d1494 2.65%, #6a51a2 96.87%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 150px 150px 0px 0px;
+
+  ${media.lessThan("small")`
+  padding-bottom: 0vh;
+  `}
+
   p {
     font-family: Montserrat;
     font-style: normal;
@@ -196,6 +255,11 @@ export const QualityContainer = styled.div`
     font-size: 52px;
     line-height: 63px;
     text-align: center;
+    ${media.lessThan("small")`
+    font-size: 32px;
+    line-height: 53px;
+    padding: 0 10vw; 
+  `}
   }
   p:nth-child(1) {
     color: #ffffff;
@@ -208,6 +272,12 @@ export const QualityContainer = styled.div`
     margin: 10vh 5vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    ${media.lessThan("small")`
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;  
+  `}
   }
 `;
 
@@ -217,7 +287,6 @@ export const QualityBox = styled.div`
   background: #f9f7f7;
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,21 +312,26 @@ export const QualityBox = styled.div`
     color: #646368;
     padding: 0 20px;
   }
+
+  ${media.lessThan("small")`
+   margin: 5vh 0;
+  `}
 `;
 
 export const HomeOperationContainer = styled.div`
   padding: 10vh 2vw;
   overflow: hidden;
+  ${media.lessThan("small")`
+  padding: 1vh 2vw;
+  `}
+
   .title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
     line-height: 66px;
-    /* identical to box height */
-
     text-align: center;
-
     color: #000000;
     span {
       color: #e9a100;
@@ -270,6 +344,24 @@ export const OperationGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  ${media.lessThan("small")`
+   display:none;
+  
+  `}
+`;
+
+export const MobileOperationGrid = styled.div`
+  display: none;
+  ${media.lessThan("small")`
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+  img{
+    width:100%;
+  }  
+  `}
 `;
 
 export const OpContent = styled.div`
@@ -278,6 +370,9 @@ export const OpContent = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 60%;
+  ${media.lessThan("small")`
+  width: 90%;
+  `}
 
   p:nth-child(1) {
     font-family: Montserrat;
@@ -287,6 +382,11 @@ export const OpContent = styled.div`
     line-height: 66px;
     text-align: center;
     color: #502d9b;
+    ${media.lessThan("small")`
+    font-size: 34px;
+    line-height: 36px;
+    margin: 2vh 0;
+  `}
   }
   p:nth-child(2) {
     font-family: Montserrat;
@@ -296,6 +396,13 @@ export const OpContent = styled.div`
     line-height: 39px;
     text-align: center;
     color: #646368;
+    ${media.lessThan("small")`
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+    margin: 1vh 0;
+
+  `}
   }
 `;
 
@@ -330,6 +437,16 @@ export const MissionContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
+    ${media.lessThan("small")`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+  img{
+    width:100%;
+  }  
+  `}
   }
 
   .statement {
@@ -342,5 +459,9 @@ export const MissionContainer = styled.div`
     p {
       padding: 5vh 5vw;
     }
+    ${media.lessThan("small")`
+    font-size: 24px;
+    line-height: 30px;
+  `}
   }
 `;
