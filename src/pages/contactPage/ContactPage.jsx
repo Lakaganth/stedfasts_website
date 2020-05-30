@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "styled-media-query";
 import ContactHero from "../../assets/contact_hero.png";
 import ContactBG from "../../assets/contact-bg.png";
 import Facebook from "../../assets/facebook.svg";
@@ -78,21 +79,32 @@ export const ContactPage = () => {
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background: linear-gradient(
     230.28deg,
     #0e1829 18.28%,
     rgba(35, 91, 173, 0.65) 110.11%
   );
-  /* background:url('${ContactBG}') no-repeat center center fixed;
-  background-size: cover;   */
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+
+  ${media.lessThan("small")`    
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items:center;
+    padding: 10vh 0;
+    img{
+      width:100%;
+    }
+  `}
 `;
 
 export const ContactContent = styled.div`
+  z-index: 5;
   .title {
     font-family: Red Hat Display;
     font-style: normal;
@@ -101,7 +113,6 @@ export const ContactContent = styled.div`
     line-height: 71px;
     text-transform: uppercase;
     color: #ffb904;
-    /* text-align: center; */
     padding: 5vh 0vw;
   }
   .contact-form {
@@ -110,6 +121,11 @@ export const ContactContent = styled.div`
     background: #fbfbfb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+
+    ${media.lessThan("small")`
+    width: 100%;
+    height: 80vh;
+  `}
   }
 `;
 const FormBox = styled.form`
@@ -128,6 +144,13 @@ const FormBox = styled.form`
     font-size: 32px;
     line-height: 39px;
     color: #ffffff;
+    ${media.lessThan("small")`
+    width: 100%;
+    height: 50px;
+    margin: 0 0%;
+    
+    padding: 0 5vw;
+  `}
   }
 `;
 
@@ -135,6 +158,9 @@ const InputGroup = styled.div`
   width: 70%;
   margin: 0vh auto;
   font-family: Montserrat;
+  ${media.lessThan("small")`
+  width: 90%;
+  `}
   input {
     width: 100%;
     height: 5vh;
@@ -162,4 +188,7 @@ const SocialRow = styled.div`
   justify-items: center;
   align-items: center;
   padding-top: 2vh;
+  ${media.lessThan("small")`
+  padding-top: 5vh;
+  `}
 `;

@@ -18,7 +18,7 @@ export const ServicesPage = () => {
                 process, especially in the crucial Final Mile. While our main
                 area of Supply Chain focus is on the Final Mile, we have
                 dedicated teams that service First Mile and Mid Mile
-                requirements.{" "}
+                requirements.
               </p>
             </div>
           </ScrollAnimation>
