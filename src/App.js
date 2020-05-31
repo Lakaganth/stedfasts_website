@@ -8,6 +8,7 @@ import { ServicesPage } from "./pages/servicesPage/ServicesPage";
 import { Navbar } from "./components/UI/Navbar";
 import { AdvantagePage } from "./pages/advantagePage/AdvantagePage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
+import { AboutPage } from "./pages/aboutPage/AboutPage";
 
 const App = () => (
   <div className="App">
@@ -16,6 +17,7 @@ const App = () => (
       <Route exact path="/" component={HomePage} />
       <Route exact path="/services" component={ServicesPage} />
       <Route exact path="/advantage" component={AdvantagePage} />
+      <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
     </Switch>
   </div>
