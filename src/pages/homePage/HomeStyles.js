@@ -32,9 +32,7 @@ ${media.lessThan("small")`
    justify-content: flex-end;
    align-items:flex-start;
    background:url('${Bg}') no-repeat center top fixed;
-   `}
-
-   
+   `} 
   
 
 
@@ -49,9 +47,14 @@ ${media.lessThan("small")`
    `}
 
    ${media.between("small", "780px")`
+     margin-left: 10px;
+    width: 70%;
+  `}
+  ${media.between("781px", "large")`
    margin-left: 10px;
     width: 70%;
   `}
+
 
     p:nth-child(1){
         font-family: Red Hat Text;
@@ -71,6 +74,11 @@ ${media.lessThan("small")`
    `}
    ${media.between("small", "780px")`
    font-size: 32px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+  `}
+  ${media.between("781px", "large")`
+  font-size: 32px;
     line-height: 30px;
     margin: 0 0 10px 0;
   `}
@@ -95,6 +103,10 @@ ${media.lessThan("small")`
    font-size: 34px;
     margin: 0 0 10px 0;
   `}
+  ${media.between("781px", "large")`
+  font-size: 34px;
+    margin: 0 0 10px 0;
+  `}
     }
     p:nth-child(3){
         font-family: Red Hat Text;
@@ -113,6 +125,11 @@ ${media.lessThan("small")`
    `}
    ${media.between("small", "780px")`
    font-size: 22px;
+    line-height: 22px;
+    margin: 0 0 30px 0;
+  `}
+  ${media.between("781px", "large")`
+  font-size: 22px;
     line-height: 22px;
     margin: 0 0 30px 0;
   `}
@@ -143,6 +160,11 @@ ${media.lessThan("small")`
         height: 50px;
         font-weight: 400;    
   `}
+  ${media.between("781px", "large")`
+  width: 175px;
+        height: 50px;
+        font-weight: 400; 
+  `}
     }
 
  
@@ -165,6 +187,13 @@ ${media.lessThan("small")`
     margin: 0 0%;
     width: 100%;
     }     
+  `}
+
+  ${media.between("781px", "large")`
+  img{
+    margin: 0 0%;
+    width: 100%;
+    }   
   `}
 } 
 `;
@@ -209,8 +238,8 @@ export const FeatureGrid = styled.div`
    align-items:center;
    margin: 3vh 0;
   `}
-  ${media.between("small", "780px")`
-  display:flex;
+  ${media.between("small", "large")`
+   display:flex;
    flex-direction: column;
    justify-content: center;
    align-items:center;
@@ -232,13 +261,14 @@ export const FeatureBox = styled.div`
   font-family: Montserrat;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  margin: 3vh auto;
 
   ${media.lessThan("small")`
-   margin: 3vh 0;
+   margin: 3vh auto;
   `}
 
-  ${media.between("small", "780px")`
-  margin: 3vh 0;
+  ${media.between("small", "large")`
+  margin: 3vh auto;
   `}
 
   p:nth-child(2) {
@@ -324,7 +354,7 @@ export const QualityContainer = styled.div`
    justify-content: center;
    align-items:center;  
   `}
-    ${media.between("small", "780px")`
+    ${media.between("small", "1200px")`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   `}
@@ -364,10 +394,10 @@ export const QualityBox = styled.div`
   }
 
   ${media.lessThan("small")`
-   margin: 5vh 0;
+   margin: 5vh auto;
   `}
-  ${media.between("small", "780px")`
-  margin: 5vh 0;
+  ${media.between("small", "1200px")`
+  margin: 5vh auto;
   `}
 `;
 
@@ -397,12 +427,16 @@ export const OperationGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  margin: 0 2vw;
   ${media.lessThan("small")`
    display:none;  
   `}
-  ${media.between("small", "780px")`
+  ${media.between("small", "1500px")`
   display: none;   
   `}
+  img {
+    justify-self: flex-start;
+  }
 `;
 
 export const MobileOperationGrid = styled.div`
@@ -413,16 +447,18 @@ export const MobileOperationGrid = styled.div`
   justify-content: center;
   align-items: center;
   margin: 2vh 0;
+  padding: 0 2vw;
   img{
     width:100%;
   }  
   `}
-  ${media.between("small", "780px")`
+  ${media.between("small", "1500px")`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2vh 0;
+  padding: 0 2vw;
   img{
     width:100%;
   }  
@@ -434,11 +470,12 @@ export const OpContent = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  justify-self: flex-start;
   width: 60%;
   ${media.lessThan("small")`
   width: 90%;
   `}
-  ${media.between("small", "780px")`
+  ${media.between("small", "1500px")`
   width: 90%;
   `}
 
@@ -464,6 +501,7 @@ export const OpContent = styled.div`
     line-height: 39px;
     text-align: center;
     color: #646368;
+
     ${media.lessThan("small")`
     font-size: 24px;
     line-height: 26px;
@@ -517,7 +555,7 @@ export const MissionContainer = styled.div`
     width:100%;
   }  
   `}
-    ${media.between("small", "780px")`
+    ${media.between("small", "large")`
   display: flex;
   flex-direction: column;
   justify-content: center;

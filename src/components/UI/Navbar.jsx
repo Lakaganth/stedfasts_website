@@ -112,6 +112,15 @@ const Grids = styled.div`
     /* screen width is between 450px and 768px (small to medium) */
     display:none;
   `}
+  ${media.between("781px", "large")`
+    /* screen width is between 768px (medium) and 1170px (large) */
+    width: 95%;
+  `}
+
+  a{
+    padding:0 20px;
+  }
+
 `;
 
 const MobileNavbar = styled.div`
