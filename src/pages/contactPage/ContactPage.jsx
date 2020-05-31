@@ -103,7 +103,7 @@ export const Container = styled.div`
     }
   `}
 
-  ${media.between("small", "780px")`
+  ${media.between("small", "1280px")`
   display:flex;
     flex-direction:column-reverse;
     justify-content: center;
@@ -117,6 +117,9 @@ export const Container = styled.div`
 
 export const ContactContent = styled.div`
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .title {
     font-family: Red Hat Display;
     font-style: normal;
@@ -128,8 +131,8 @@ export const ContactContent = styled.div`
     padding: 5vh 0vw;
   }
   .contact-form {
-    width: 130%;
-    height: 70vh;
+    width: 40vw;
+    /* height: 70vh; */
     background: #fbfbfb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -139,9 +142,9 @@ export const ContactContent = styled.div`
     height: 80vh;
   `}
 
-    ${media.between("small", "780px")`
-    width: 100%;
-    height: 80vh;
+    ${media.between("small", "1280px")`
+    width: 80vw;
+    /* height: 80vh; */
   `}
   }
 `;
@@ -153,9 +156,9 @@ const FormBox = styled.form`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: 10px;
-    width: 307px;
+    width: 50%;
     height: 50px;
-    margin: 0 16%;
+    margin: 0 25%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
@@ -163,24 +166,23 @@ const FormBox = styled.form`
     line-height: 39px;
     color: #ffffff;
     ${media.lessThan("small")`
-    width: 100%;
-    height: 50px;
-    margin: 0 0%;    
+    height: 50px; 
     padding: 0 5vw;
   `}
-    ${media.between("small", "780px")`
-    width: 100%;
-    height: 50px;
-    margin: 0 0%;    
+    ${media.between("small", "1280px")`
+    width: 100%
+    margin : 10vh 45vw;    
     padding: 0 5vw;
+    
   `}
   }
 `;
 
 const InputGroup = styled.div`
-  width: 70%;
+  width: 80%;
   margin: 0vh auto;
   font-family: Montserrat;
+
   ${media.lessThan("small")`
   width: 90%;
   `}
@@ -196,8 +198,10 @@ const InputGroup = styled.div`
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    font-size: 28px;
   }
   textarea {
+    font-family: Montserrat;
     width: 100%;
     height: 25vh;
     margin: 1vh 0;
@@ -206,6 +210,7 @@ const InputGroup = styled.div`
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-top: 1vh;
+    font-size: 22px;
   }
 `;
 
@@ -214,8 +219,8 @@ const SocialRow = styled.div`
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  padding-top: 2vh;
+  padding: 2vh 0;
   ${media.lessThan("small")`
-  padding-top: 5vh;
+  padding: 5vh 0;
   `}
 `;

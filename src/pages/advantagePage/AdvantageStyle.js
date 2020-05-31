@@ -21,9 +21,9 @@ export const AdvantageHeroContainer = styled.div`
     background: linear-gradient(180deg, #5928BE 0%, rgba(89, 40, 190, 0.59) 100%);
   `}
 
-    ${media.between("small", "780px")`
+    ${media.between("small", "1280px")`
     /* screen width is between 450px and 768px (small to medium) */
-    padding: 10vh 15vw; 
+    padding: 15vh 15vw; 
   `}
 
 

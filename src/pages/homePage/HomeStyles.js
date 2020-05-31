@@ -555,7 +555,7 @@ export const MissionContainer = styled.div`
     width:100%;
   }  
   `}
-    ${media.between("small", "large")`
+    ${media.between("small", "1200px")`
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -60,10 +60,25 @@ export const AboutHero = styled.div`
      line-height: 39px;
   `}
 
+  ${media.between("small", "1480px")`
+     display:flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items:center;
+     font-size: 32px;
+     line-height: 39px;
+  `}
+
+
   .about-hero-img {
     margin-bottom: 10vh;
     ${media.lessThan("small")`
     width: 90%;
+    margin-bottom: 0vh;
+    overflow:hidden;
+  `}
+    ${media.between("small", "1480px")`
+     width: 80%;
     margin-bottom: 0vh;
     overflow:hidden;
   `}
@@ -80,17 +95,24 @@ export const AboutHero = styled.div`
   }
 
   .intro {
-    padding: 10vh 0vw 0 10vw;
+    padding: 10vh 0vw 0 3vw;
     ${media.lessThan("small")`
     padding: 10vh 5vw 0 5vw;
     width: 90%;
   `}
+    ${media.between("small", "1480px")`
+  width: 90%;
+  `}
   }
   .content {
-    padding: 15vh 10vw 0 2vw;
+    padding: 15vh 5vw 0 0vw;
     ${media.lessThan("small")`
     padding: 3vh 3vw 0 5vw;
     width: 90%;
+  `}
+    ${media.between("small", "1480px")`
+  width: 90%;
+  padding: 3vh 3vw 0 5vw;
   `}
   }
 `;

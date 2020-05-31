@@ -26,6 +26,15 @@ export const ServiceHeroContainer = styled.div`
    align-items: center;
   `}
 
+  ${media.between("small", "1280px")`
+    /* screen width is between 450px and 768px (small to medium) */
+   padding: 20vh 2vw;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  `}
+
 
 
 
@@ -61,13 +70,16 @@ export const ServiceHeroContainer = styled.div`
     }
   }
   .hero-img{
+    justify-self: flex-start;
+    align-self: flex-start;
     img{
-      width:120%;
+      
+      width:100%;
       ${media.lessThan("small")`
       width:100%;
   `}
-  ${media.between("small", "780px")`
-  width:100%;
+  ${media.between("small", "1800px")`
+  width:120%;
   `}
 
     }
@@ -101,7 +113,7 @@ export const SerBox = styled.div`
      width:100%;
    }
   `}
-  ${media.between("small", "780px")`
+  ${media.between("small", "1280px")`
   display: flex;
   flex-direction: column;
    justify-content: center;
