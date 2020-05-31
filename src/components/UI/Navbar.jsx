@@ -108,6 +108,10 @@ const Grids = styled.div`
     /* screen width is less than 450px (small) */
     display:none;
   `}
+  ${media.between("small", "780px")`
+    /* screen width is between 450px and 768px (small to medium) */
+    display:none;
+  `}
 `;
 
 const MobileNavbar = styled.div`
@@ -143,9 +147,28 @@ const MobileNavbar = styled.div`
         width:100%;
         /* height:80%; */
       }
-    }
-    
-   
+    }     
+  `}
+  ${media.between("small", "780px")`
+  display:flex;    
+    position:relative;
+    width:100vw;
+    .menuButton{
+       justify-content: flex-end;      
+        position: absolute;
+        top: 25px;
+        right: 20px;      
+       }
+    .mobile-nav-logo{
+      display:flex;
+      position: relative;
+      top:10px;
+      left:30px;
+      img{
+        width:100%;
+        /* height:80%; */
+      }
+    }     
   `}
 `;
 
@@ -180,5 +203,33 @@ position:relative;
    font-size: 32px;
  }
 
+  `}
+  ${media.between("small", "780px")`
+  display:flex;
+ flex-direction:column;
+ width: 100vw;
+ height: 80vh;
+ background: purple;
+ z-index: 10;
+ border-radius: 0px 0 0 150px;
+ padding: 15vh 10vw;
+ animation: 1s ${MobileMenuOpen};  
+ transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+
+
+position:relative;
+ .closemenu{
+   position:absolute;
+   top: 30px;
+   right: 30px;
+   img{
+   width:150%;
+   }
+ }
+ a{
+   margin: 2.5vh 10vw;
+   font-size: 32px;
+ }
   `}
 `;

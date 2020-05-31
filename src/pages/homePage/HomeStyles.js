@@ -34,6 +34,9 @@ ${media.lessThan("small")`
    background:url('${Bg}') no-repeat center top fixed;
    `}
 
+   
+  
+
 
 .hero-content{
     text-align:left;
@@ -44,6 +47,11 @@ ${media.lessThan("small")`
     margin-left: 20px;
     width: 70%;
    `}
+
+   ${media.between("small", "780px")`
+   margin-left: 10px;
+    width: 70%;
+  `}
 
     p:nth-child(1){
         font-family: Red Hat Text;
@@ -61,6 +69,11 @@ ${media.lessThan("small")`
     line-height: 30px;
     margin: 0 0 10px 0;
    `}
+   ${media.between("small", "780px")`
+   font-size: 32px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+  `}
     }
 
     p:nth-child(2){
@@ -78,6 +91,10 @@ ${media.lessThan("small")`
     font-size: 34px;
     margin: 0 0 10px 0;
    `}
+   ${media.between("small", "780px")`
+   font-size: 34px;
+    margin: 0 0 10px 0;
+  `}
     }
     p:nth-child(3){
         font-family: Red Hat Text;
@@ -94,6 +111,11 @@ ${media.lessThan("small")`
     line-height: 22px;
     margin: 0 0 30px 0;
    `}
+   ${media.between("small", "780px")`
+   font-size: 22px;
+    line-height: 22px;
+    margin: 0 0 30px 0;
+  `}
        
     }
     button{
@@ -116,6 +138,11 @@ ${media.lessThan("small")`
         height: 50px;
         font-weight: 400;        
    `}
+   ${media.between("small", "780px")`
+   width: 175px;
+        height: 50px;
+        font-weight: 400;    
+  `}
     }
 
  
@@ -128,11 +155,17 @@ ${media.lessThan("small")`
     animation-delay: 0.1s;
     ${media.lessThan("small")` 
     img{
-      margin: 0 20%;
+    margin: 0 20%;
     width: 70%;
-    }
-     
+    }     
    `}
+
+   ${media.between("small", "780px")`
+   img{
+    margin: 0 0%;
+    width: 100%;
+    }     
+  `}
 } 
 `;
 
@@ -168,12 +201,20 @@ export const FeatureGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  overflow: hidden;
   ${media.lessThan("small")`
   display:flex;
    flex-direction: column;
    justify-content: center;
    align-items:center;
    margin: 3vh 0;
+  `}
+  ${media.between("small", "780px")`
+  display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   margin: 10vh 0;   
   `}
 `;
 
@@ -194,6 +235,10 @@ export const FeatureBox = styled.div`
 
   ${media.lessThan("small")`
    margin: 3vh 0;
+  `}
+
+  ${media.between("small", "780px")`
+  margin: 3vh 0;
   `}
 
   p:nth-child(2) {
@@ -243,6 +288,7 @@ export const QualityContainer = styled.div`
   background: linear-gradient(127.36deg, #3d1494 2.65%, #6a51a2 96.87%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 150px 150px 0px 0px;
+  overflow: hidden;
 
   ${media.lessThan("small")`
   padding-bottom: 0vh;
@@ -277,6 +323,10 @@ export const QualityContainer = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items:center;  
+  `}
+    ${media.between("small", "780px")`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   `}
   }
 `;
@@ -316,6 +366,9 @@ export const QualityBox = styled.div`
   ${media.lessThan("small")`
    margin: 5vh 0;
   `}
+  ${media.between("small", "780px")`
+  margin: 5vh 0;
+  `}
 `;
 
 export const HomeOperationContainer = styled.div`
@@ -345,8 +398,10 @@ export const OperationGrid = styled.div`
   justify-items: center;
   align-items: center;
   ${media.lessThan("small")`
-   display:none;
-  
+   display:none;  
+  `}
+  ${media.between("small", "780px")`
+  display: none;   
   `}
 `;
 
@@ -354,6 +409,16 @@ export const MobileOperationGrid = styled.div`
   display: none;
   ${media.lessThan("small")`
  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+  img{
+    width:100%;
+  }  
+  `}
+  ${media.between("small", "780px")`
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -371,6 +436,9 @@ export const OpContent = styled.div`
   align-items: center;
   width: 60%;
   ${media.lessThan("small")`
+  width: 90%;
+  `}
+  ${media.between("small", "780px")`
   width: 90%;
   `}
 
@@ -409,6 +477,8 @@ export const OpContent = styled.div`
 export const MissionContainer = styled.div`
   width: 100vw;
   padding: 10vh 0;
+  overflow: hidden;
+
   background: linear-gradient(
     128.76deg,
     #411a95 -2.71%,
@@ -446,6 +516,16 @@ export const MissionContainer = styled.div`
   img{
     width:100%;
   }  
+  `}
+    ${media.between("small", "780px")`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0;
+  img{
+    width:95%;
+  } 
   `}
   }
 

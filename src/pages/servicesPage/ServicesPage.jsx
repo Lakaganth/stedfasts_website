@@ -4,6 +4,7 @@ import ServiceHero from "../../assets/service_hero.png";
 import { Container, ServiceHeroContainer } from "./ServiceStyles";
 import { ServiceBoxPage } from "./ServiceBox";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Footer } from "../../components/UI/Footer";
 
 export const ServicesPage = () => {
   return (
@@ -30,6 +31,7 @@ export const ServicesPage = () => {
         </ServiceHeroContainer>
       </ScrollAnimation>
       <ServiceBoxPage />
+      <Footer />
     </Container>
   );
 };

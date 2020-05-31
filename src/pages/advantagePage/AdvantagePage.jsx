@@ -2,6 +2,7 @@ import React from "react";
 import { Container, AdvantageHeroContainer } from "./AdvantageStyle";
 import { AdvantageBox } from "./AdvantageBox";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Footer } from "./../../components/UI/Footer";
 
 export const AdvantagePage = () => {
   return (
@@ -23,6 +24,7 @@ export const AdvantagePage = () => {
         {/* <img src={AdvantageHero} alt="Advantage" /> */}
       </AdvantageHeroContainer>
       <AdvantageBox />
+      <Footer />
     </Container>
   );
 };

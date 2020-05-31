@@ -80,6 +80,7 @@ export const ContactPage = () => {
 export const Container = styled.div`
   width: 100vw;
   /* height: 100vh; */
+  padding: 10vh 0;
   background: linear-gradient(
     230.28deg,
     #0e1829 18.28%,
@@ -93,6 +94,17 @@ export const Container = styled.div`
 
   ${media.lessThan("small")`    
     display:flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items:center;
+    padding: 10vh 0;
+    img{
+      width:100%;
+    }
+  `}
+
+  ${media.between("small", "780px")`
+  display:flex;
     flex-direction:column-reverse;
     justify-content: center;
     align-items:center;
@@ -126,10 +138,16 @@ export const ContactContent = styled.div`
     width: 100%;
     height: 80vh;
   `}
+
+    ${media.between("small", "780px")`
+    width: 100%;
+    height: 80vh;
+  `}
   }
 `;
 const FormBox = styled.form`
   padding-top: 3vh;
+
   button {
     background: linear-gradient(290.87deg, #e9aa0a 26.58%, #ffc163 95.68%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -147,8 +165,13 @@ const FormBox = styled.form`
     ${media.lessThan("small")`
     width: 100%;
     height: 50px;
-    margin: 0 0%;
-    
+    margin: 0 0%;    
+    padding: 0 5vw;
+  `}
+    ${media.between("small", "780px")`
+    width: 100%;
+    height: 50px;
+    margin: 0 0%;    
     padding: 0 5vw;
   `}
   }
@@ -161,6 +184,10 @@ const InputGroup = styled.div`
   ${media.lessThan("small")`
   width: 90%;
   `}
+  ${media.between("small", "780px")`
+  width: 90%;
+  `}
+
   input {
     width: 100%;
     height: 5vh;

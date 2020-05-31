@@ -17,6 +17,7 @@ import { HomeQualityBox } from "./HomeQualityBox";
 import { HomeOperation } from "./HomeOperation";
 import { HomeMission } from "./HomeMission";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Footer } from "../../components/UI/Footer";
 
 export const HomePage = () => {
   return (
@@ -79,6 +80,7 @@ export const HomePage = () => {
       {/* Page-5 Begins */}
       <HomeMission />
       {/* Page-5 ENDS */}
+      <Footer />
     </Container>
   );
 };

@@ -21,6 +21,13 @@ export const AdvantageHeroContainer = styled.div`
     background: linear-gradient(180deg, #5928BE 0%, rgba(89, 40, 190, 0.59) 100%);
   `}
 
+    ${media.between("small", "780px")`
+    /* screen width is between 450px and 768px (small to medium) */
+    padding: 10vh 15vw; 
+  `}
+
+
+
 
     .title {
       font-family: Red Hat Display;
@@ -30,6 +37,7 @@ export const AdvantageHeroContainer = styled.div`
       line-height: 71px;
       text-transform: uppercase;
       color: #ffb904;
+      
     }
    .content {
       font-family: Red Hat Display;
@@ -98,8 +106,15 @@ export const AdBox = styled.div`
   align-items: center;
   overflow: hidden;
   ${media.lessThan("small")`
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  `}
+
+  ${media.between("small", "780px")`
   display: flex;
-  flex-direction: column;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
   `}

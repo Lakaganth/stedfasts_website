@@ -27,6 +27,8 @@ export const ServiceHeroContainer = styled.div`
   `}
 
 
+
+
   .content {
     p:nth-child(1) {
       font-family: Red Hat Display;
@@ -37,6 +39,11 @@ export const ServiceHeroContainer = styled.div`
       text-transform: uppercase;
       color: #ffb904;
       padding: 0 0 5vh 10vw;
+  ${media.between("small", "780px")`
+       font-size:32px;
+      line-height:32px;
+      padding: 0 0 5vh 2vw;
+  `}
     }
     p:nth-child(2) {
       font-family: Red Hat Text;
@@ -46,6 +53,11 @@ export const ServiceHeroContainer = styled.div`
       line-height: 42px;
       color: #ffffff;
       padding: 0 5vw 0 10vw;
+      ${media.between("small", "780px")`
+       font-size:24px;
+      line-height:32px;
+      padding: 0 0 5vh 2vw;
+  `}
     }
   }
   .hero-img{
@@ -53,6 +65,9 @@ export const ServiceHeroContainer = styled.div`
       width:120%;
       ${media.lessThan("small")`
       width:100%;
+  `}
+  ${media.between("small", "780px")`
+  width:100%;
   `}
 
     }
@@ -78,6 +93,15 @@ export const SerBox = styled.div`
   padding: 5vh 0;
 
   ${media.lessThan("small")`
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   img{
+     width:100%;
+   }
+  `}
+  ${media.between("small", "780px")`
   display: flex;
   flex-direction: column;
    justify-content: center;
