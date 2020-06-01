@@ -48,7 +48,7 @@ ${media.lessThan("small")`
     width: 70%;
    `}
 
-   ${media.between("small", "1280px")`
+   ${media.between("small", "1400px")`
      margin-left: 10px;
     width: 70%;
   `}
@@ -71,7 +71,7 @@ ${media.lessThan("small")`
     line-height: 30px;
     margin: 0 0 10px 0;
    `}
-   ${media.between("small", "1280px")`
+   ${media.between("small", "1400px")`
    font-size: 32px;
     line-height: 30px;
     margin: 0 0 10px 0;
@@ -94,7 +94,7 @@ ${media.lessThan("small")`
     font-size: 34px;
     margin: 0 0 10px 0;
    `}
-   ${media.between("small", "1280px")`
+   ${media.between("small", "1400px")`
    font-size: 34px;
     margin: 0 0 10px 0;
   `}
@@ -115,7 +115,7 @@ ${media.lessThan("small")`
     line-height: 22px;
     margin: 0 0 30px 0;
    `}
-   ${media.between("small", "1280px")`
+   ${media.between("small", "1400px")`
    font-size: 22px;
     line-height: 22px;
     margin: 0 0 30px 0;
@@ -143,7 +143,7 @@ ${media.lessThan("small")`
         height: 50px;
         font-weight: 400;        
    `}
-   ${media.between("small", "1280px")`
+   ${media.between("small", "1400px")`
    width: 175px;
         height: 50px;
         font-weight: 400;    
@@ -173,7 +173,7 @@ ${media.lessThan("small")`
     }     
   `}
 
-  ${media.between("781px", "large")`
+  ${media.between("781px", "1400px")`
   img{
     margin: 0 0%;
     width: 100%;
