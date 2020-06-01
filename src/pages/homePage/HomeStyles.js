@@ -15,10 +15,11 @@ const HeroContentFade = keyframes`${bounceInUp} `;
 const HeroImageFade = keyframes`${fadeInDown} `;
 
 export const HeroContainer = styled.div`
-height:80vh;
+
 border-radius: 0 0 150px 150px;
 background:url('${Bg}') no-repeat center center fixed;
 background-size: cover;
+padding-bottom: 10vh;
 display:grid;
 grid-template-columns: 1fr 1fr;
 justify-items:center;
