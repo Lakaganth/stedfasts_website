@@ -19,7 +19,8 @@ export const HeroContainer = styled.div`
 border-radius: 0 0 150px 150px;
 background:url('${Bg}') no-repeat center center fixed;
 background-size: cover;
-padding-bottom: 10vh;
+
+padding: 10vh 0;
 display:grid;
 grid-template-columns: 1fr 1fr;
 justify-items:center;
