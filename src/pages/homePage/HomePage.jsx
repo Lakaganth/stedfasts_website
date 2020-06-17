@@ -54,7 +54,7 @@ export const HomePage = () => {
         // animateOut="bounceUp"
         delay={300}
         duration={1.2}
-        animateOnce="true"
+        // animateOnce=true
       >
         <FeatureGrid>
           <HomeFeatureBox

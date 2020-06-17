@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import media from "styled-media-query";
 import Linkedin from "../../assets/flinkedin.svg";
 import Facebook from "../../assets/ffacebook.svg";

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import media from "styled-media-query";
 import ContactHero from "../../assets/contact_hero.png";
-import ContactBG from "../../assets/contact-bg.png";
+// import ContactBG from "../../assets/contact-bg.png";
 import Facebook from "../../assets/facebook.svg";
 import Twitter from "../../assets/twitter.svg";
 import LinkedIn from "../../assets/linkedin.svg";
