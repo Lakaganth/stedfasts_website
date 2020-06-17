@@ -23,13 +23,11 @@ export const HomeOperation = () => {
         </ScrollAnimation>
         <OperationContent
           opTitle="Super-fast Delivery"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opContent="Stedfasts assures delivery on priority across the country which is custom made for the seamless conveyance."
         />
         <OperationContent
-          opTitle="Deliver
-          Documents 
-          & Packages"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opTitle="Deliver Documents & Packages"
+          opContent="Whether you need a business document delivered to a client or you want to send a gift to a friend, we got you covered!"
         />
         <ScrollAnimation animateIn="slideInRight">
           <img
@@ -49,7 +47,7 @@ export const HomeOperation = () => {
         <OperationContent
           opTitle="Warehouse
           Fulfillment"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opContent="Our warehouse provides companies across the country with cost-effective distribution and eCommerce fulfillment services."
         />
       </OperationGrid>
       <MobileOperationGrid>
@@ -58,7 +56,7 @@ export const HomeOperation = () => {
         </ScrollAnimation>
         <OperationContent
           opTitle="Super-fast Delivery"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opContent="Stedfasts assures delivery on priority across the country which is custom made for the seamless conveyance."
         />
         <ScrollAnimation animateIn="slideInRight">
           <img
@@ -72,7 +70,7 @@ export const HomeOperation = () => {
           opTitle="Deliver
           Documents 
           & Packages"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opContent="Whether you need a business document delivered to a client or you want to send a gift to a friend, we got you covered!"
         />
         <ScrollAnimation animateIn="slideInLeft">
           <img
@@ -84,7 +82,7 @@ export const HomeOperation = () => {
         <OperationContent
           opTitle="Warehouse
           Fulfillment"
-          opContent="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+          opContent="Our warehouse provides companies across the country with cost-effective distribution and eCommerce fulfillment services."
         />
       </MobileOperationGrid>
     </HomeOperationContainer>

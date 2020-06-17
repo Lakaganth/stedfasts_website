@@ -21,7 +21,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg1}
             QTitle="Secure Delivery"
-            Qdesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing"
+            Qdesc="STP delivers the best packed packages as well as provides assurance to deliver them safe and secured without any damage. "
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -33,7 +33,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg2}
             QTitle="Promised Delivery"
-            Qdesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing"
+            Qdesc="STP has carved out a specialty by focusing on delivering the packages on time as promised."
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -45,7 +45,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg3}
             QTitle="Best Pricing"
-            Qdesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing"
+            Qdesc="STP offer excellent products with customer focused pricing!"
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -57,7 +57,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg4}
             QTitle="Complete Support"
-            Qdesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing"
+            Qdesc="STP provides a customer-centric approach to ensure that all of our clients are receiving best-in-class services."
           />
         </ScrollAnimation>
       </div>

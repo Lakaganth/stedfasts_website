@@ -341,9 +341,10 @@ export const QualityContainer = styled.div`
    justify-content: center;
    align-items:center;  
   `}
-    ${media.between("small", "1200px")`
+    ${media.between("small", "1300px")`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
   `}
   }
 `;
@@ -383,7 +384,7 @@ export const QualityBox = styled.div`
   ${media.lessThan("small")`
    margin: 5vh auto;
   `}
-  ${media.between("small", "1200px")`
+  ${media.between("small", "1300px")`
   margin: 5vh auto;
   `}
 `;

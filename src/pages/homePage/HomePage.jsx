@@ -60,18 +60,18 @@ export const HomePage = () => {
           <HomeFeatureBox
             featImg={Feat1}
             feattitle="On-time Delivery"
-            featDesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+            featDesc="Stedfasts helps you deliver your shipment on time across Canada. Let us know when and where, we'll do the rest."
           />
           <HomeFeatureBox
             featImg={Feat2}
             feattitle="Safe &
           Secure "
-            featDesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+            featDesc="We aim hard to supply hassle- free and safe delivery of your important consignment. This is achieved through exceptionally trained equipment operators, experienced freight handlers."
           />
           <HomeFeatureBox
             featImg={Feat3}
             feattitle="Sortation services"
-            featDesc="What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard"
+            featDesc="We have the best individuals who are specialists at accurately packaging, sorting and sending your package to its destination."
           />
         </FeatureGrid>
       </ScrollAnimation>
