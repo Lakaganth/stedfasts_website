@@ -40,8 +40,8 @@ ${media.lessThan("small")`
 
 .hero-content{
     text-align:left;
-    width: 50%;
-    padding-top: 10vh;
+    
+    padding-top: 5vh;
 
     ${media.lessThan("small")` 
     margin-left: 20px;
@@ -109,15 +109,18 @@ ${media.lessThan("small")`
         color: #FFFFFF;
         margin: 0 0 70px 0;
         animation: 1s ${HeroContentFade};
+        width: 60%;
     animation-delay: 0.3s;
     ${media.lessThan("small")` 
     font-size: 22px;
     line-height: 22px;
     margin: 0 0 30px 0;
+    width: 80%;
    `}
    ${media.between("small", "1400px")`
    font-size: 22px;
     line-height: 22px;
+    width: 80%;
     margin: 0 0 30px 0;
   `}
   
