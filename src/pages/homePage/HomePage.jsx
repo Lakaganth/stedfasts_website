@@ -18,20 +18,25 @@ import { HomeOperation } from "./HomeOperation";
 import { HomeMission } from "./HomeMission";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Footer } from "../../components/UI/Footer";
+import { Link } from "react-router-dom";
+import STPLogo from "../../assets/stplogo.svg";
 
 export const HomePage = () => {
   return (
     <Container>
       <HeroContainer>
         <div className="hero-content">
-          <p>Quick & Reliable</p>
-          <p>Dropship!</p>
+          <img src={STPLogo} alt="stplogo" />
+          <p className="q-r">Quick & Reliable</p>
+          <p className="dropship">Dropship!</p>
           <p>
             Our delivery services enables your business to achieve the next
             level
           </p>
 
-          <button>Services</button>
+          <button>
+            <Link to="/services">Services</Link>
+          </button>
         </div>
         <div className="hero-img">
           <img src={Hero} alt="Hero img" />

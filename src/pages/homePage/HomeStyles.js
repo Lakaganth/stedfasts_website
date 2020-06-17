@@ -55,7 +55,7 @@ ${media.lessThan("small")`
  
 
 
-    p:nth-child(1){
+  p:nth-child(2){
         font-family: Red Hat Text;
         font-style: normal;
         font-weight: normal;
@@ -79,7 +79,7 @@ ${media.lessThan("small")`
 
     }
 
-    p:nth-child(2){
+    p:nth-child(3){
         font-family: Red Hat Text;
         font-style: normal;
         font-weight: bold;
@@ -100,7 +100,7 @@ ${media.lessThan("small")`
   `}
 
     }
-    p:nth-child(3){
+    p:nth-child(4){
         font-family: Red Hat Text;
         font-style: normal;
         font-weight: normal;
@@ -138,6 +138,9 @@ ${media.lessThan("small")`
         color: #FFFFFF;
         animation: 1s ${HeroContentFade};
     animation-delay: 0.4s;
+    a{
+      color: #FFFFFF;
+    }
     ${media.lessThan("small")` 
     width: 175px;
         height: 50px;
