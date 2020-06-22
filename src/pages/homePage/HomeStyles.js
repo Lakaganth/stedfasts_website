@@ -40,8 +40,8 @@ ${media.lessThan("small")`
 
 .hero-content{
     text-align:left;
-    
-    padding-top: 5vh;
+
+    padding: 5vh 0 0 2vw;
 
     ${media.lessThan("small")` 
     margin-left: 20px;
