@@ -29,11 +29,7 @@ export const Footer = () => {
         </SocialDiv>
         <AddressDiv>
           <p>
-            Stedfasts Inc <br />
-            95 Mural Street, 6th Floor,
-            <br />
-            Richmond Hill, ON, <br />
-            L4B3G2.
+            STP Logistics <br />
           </p>
         </AddressDiv>
       </ContactGrid>
