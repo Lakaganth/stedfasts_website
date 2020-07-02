@@ -3,12 +3,12 @@ import "./App.css";
 
 import { Switch, Route } from "react-router-dom";
 
-import { HomePage } from "./pages/homePage/HomePage";
-import { ServicesPage } from "./pages/servicesPage/ServicesPage";
+// import { HomePage } from "./pages/homePage/HomePage";
+// import { ServicesPage } from "./pages/servicesPage/ServicesPage";
 import { Navbar } from "./components/UI/Navbar";
-import { AdvantagePage } from "./pages/advantagePage/AdvantagePage";
-import { ContactPage } from "./pages/contactPage/ContactPage";
-import { AboutPage } from "./pages/aboutPage/AboutPage";
+// import { AdvantagePage } from "./pages/advantagePage/AdvantagePage";
+// import { ContactPage } from "./pages/contactPage/ContactPage";
+// import { AboutPage } from "./pages/aboutPage/AboutPage";
 import { UnderConstruction } from "./components/UnderConstruction";
 
 const App = () => (

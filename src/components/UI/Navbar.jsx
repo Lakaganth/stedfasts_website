@@ -1,20 +1,21 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+// import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import NavLogo from "../../assets/logo.svg";
 import { NavLink } from "react-router-dom";
 import media from "styled-media-query";
-import { animated, useSpring } from "react-spring";
+// import { animated } from "react-spring";
 import MobileLogo from "../../assets/mobile_logo.svg";
 import MobileMenu from "../../assets/mobile_menu.svg";
-import MobileMenuClose from "../../assets/mobile_menu_close.svg";
-import { fadeInLeft } from "react-animations/lib/fadeInLeft";
+// import MobileMenuClose from "../../assets/mobile_menu_close.svg";
+// import { fadeInLeft } from "react-animations/lib/fadeInLeft";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
 
-  const mobilemenuAnimation = useSpring({
-    transform: mobileMenu ? `translate3d(0,0,0)` : `translate3d(100vw,0,0)`,
-  });
+  // const mobilemenuAnimation = useSpring({
+  //   transform: mobileMenu ? `translate3d(0,0,0)` : `translate3d(100vw,0,0)`,
+  // });
 
   const handleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -181,64 +182,62 @@ const MobileNavbar = styled.div`
   `}
 `;
 
-const MobileMenuOpen = keyframes`${fadeInLeft} `;
+// const MobileMenuOpen = keyframes`${fadeInLeft} `;
 
-const MobileMenuBox = styled(animated.div)`
-  ${media.lessThan("small")`
- display:flex;
- flex-direction:column;
- width: 100vw;
- height: 80vh;
- background: purple;
- z-index: 10;
- border-radius: 0px 0 0 150px;
- padding: 15vh 10vw;
- animation: 1s ${MobileMenuOpen};  
- transition: transform .3s
-              cubic-bezier(0, .52, 0, 1);
+// const MobileMenuBox = styled(animated.div)`
+//   ${media.lessThan("small")`
+//  display:flex;
+//  flex-direction:column;
+//  width: 100vw;
+//  height: 80vh;
+//  background: purple;
+//  z-index: 10;
+//  border-radius: 0px 0 0 150px;
+//  padding: 15vh 10vw;
+//  animation: 1s ${MobileMenuOpen};
+//  transition: transform .3s
+//               cubic-bezier(0, .52, 0, 1);
 
+// position:relative;
+//  .closemenu{
+//    position:absolute;
+//    top: 30px;
+//    right: 30px;
+//    img{
+//    width:150%;
+//    }
+//  }
+//  a{
+//    margin: 2.5vh 10vw;
+//    font-size: 32px;
+//  }
 
-position:relative;
- .closemenu{
-   position:absolute;
-   top: 30px;
-   right: 30px;
-   img{
-   width:150%;
-   }
- }
- a{
-   margin: 2.5vh 10vw;
-   font-size: 32px;
- }
+//   `}
+//   ${media.between("small", "780px")`
+//   display:flex;
+//  flex-direction:column;
+//  width: 100vw;
+//  height: 80vh;
+//  background: purple;
+//  z-index: 10;
+//  border-radius: 0px 0 0 150px;
+//  padding: 15vh 10vw;
+//  animation: 1s ${MobileMenuOpen};
+//  transition: transform .3s
+//               cubic-bezier(0, .52, 0, 1);
 
-  `}
-  ${media.between("small", "780px")`
-  display:flex;
- flex-direction:column;
- width: 100vw;
- height: 80vh;
- background: purple;
- z-index: 10;
- border-radius: 0px 0 0 150px;
- padding: 15vh 10vw;
- animation: 1s ${MobileMenuOpen};  
- transition: transform .3s
-              cubic-bezier(0, .52, 0, 1);
-
-
-position:relative;
- .closemenu{
-   position:absolute;
-   top: 30px;
-   right: 30px;
-   img{
-   width:150%;
-   }
- }
- a{
-   margin: 2.5vh 10vw;
-   font-size: 32px;
- }
-  `}
-`;
+// position:relative;
+//  .closemenu{
+//    position:absolute;
+//    top: 30px;
+//    right: 30px;
+//    img{
+//    width:150%;
+//    }
+//  }
+//  a{
+//    margin: 2.5vh 10vw;
+//    font-size: 32px;
+//  }
+//   `}
+// `;
