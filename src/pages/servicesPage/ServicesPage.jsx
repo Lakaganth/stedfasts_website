@@ -25,7 +25,7 @@ export const ServicesPage = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="slideInRight" delay={600}>
             <div className="hero-img">
-              <img src={ServiceHero} alt="Stedfasts Services" />
+              <img src={ServiceHero} alt="STP Services" />
             </div>
           </ScrollAnimation>
         </ServiceHeroContainer>

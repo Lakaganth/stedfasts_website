@@ -30,10 +30,10 @@ export const Navbar = () => {
         </NavLink>
         <div></div>
         <div></div>
-        <NavLink to="/services">SERVICES</NavLink>
+        {/* <NavLink to="/services">SERVICES</NavLink>
         <NavLink to="/advantage">OUR ADVANTAGE</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink> */}
       </Grids>
       <MobileNavbar>
         <div className="mobile-nav-logo">
@@ -44,7 +44,7 @@ export const Navbar = () => {
         <button className="menuButton" onClick={handleMobileMenu}>
           <img src={MobileMenu} alt="mobile menu" style={{ width: "100%" }} />
         </button>
-        {mobileMenu ? (
+        {/* {mobileMenu ? (
           <MobileMenuBox style={mobilemenuAnimation}>
             <div className="closemenu">
               <button onClick={handleMobileMenu}>
@@ -64,7 +64,7 @@ export const Navbar = () => {
               <buttton onClick={handleMobileMenu}>Contact</buttton>
             </NavLink>
           </MobileMenuBox>
-        ) : null}
+        ) : null} */}
       </MobileNavbar>
     </Container>
   );

@@ -24,7 +24,7 @@ export const Footer = () => {
           </div>
           <div className="phone">
             <img src={Phone} alt="Phone" />
-            <p>1-888-926-3222</p>
+            <p>1-905-470-1928</p>
           </div>
         </SocialDiv>
         <AddressDiv>
@@ -33,7 +33,7 @@ export const Footer = () => {
           </p>
         </AddressDiv>
       </ContactGrid>
-      <p> &#169; Copyright Stedfasts. 2020.</p>
+      <p> &#169; Copyright STP Logistics Inc. 2020.</p>
     </FooterContainer>
   );
 };
