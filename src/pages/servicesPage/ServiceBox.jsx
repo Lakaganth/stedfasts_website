@@ -9,22 +9,22 @@ export const ServiceBoxPage = () => {
     <ServiceBoxPageContainer>
       <ServiceBoxAB
         serviceImage={Service1}
-        serviceTitle="Home Delivery"
+        serviceTitle=" Door step delivery"
         serviceSubtitle="From warehouse to welcome mat."
-        serviceText="Our process can be trusted to be timely and accurate, providing you with full visibility until the product arrives safely in the hands of your customer."
+        serviceText="We are focused on handling all your packages with utmost care from the warehouse till the time of drop off at the customer’s doorstep, providing with full transparency."
       />
 
       <ServiceBoxBA
         serviceImage={Service2}
         serviceTitle="E-Commerce Delivery"
-        serviceSubtitle="Every day we customize our solutions to meet your unique delivery needs in a way our larger competitors can't. "
-        serviceText="We manage the various behind-the-scenes activities necessary to get your product from you to your customers, allowing you to focus on growing your business."
+        serviceSubtitle="We customize our solutions according to your delivery needs."
+        serviceText="We manage multiple activities back in the warehouse, needed to get your product to your customers, enabling you to focus on growing your business."
       />
       <ServiceBoxAB
         serviceImage={Service3}
         serviceTitle="Sortation Services"
-        serviceSubtitle="Getting your products to your customers starts in the warehouse."
-        serviceText="Our sortation experts pick and pack up to 20,000 packages a night — per warehouse — proceeding to stage these items from prompt delivery same day or next day."
+        serviceSubtitle="Fulfilling your customer’s need starts in the warehouse"
+        serviceText="Our specialists pick and pack up to 20,000 packages every night – per warehouse – getting them ready for the same day or next day’s delivery."
       />
     </ServiceBoxPageContainer>
   );

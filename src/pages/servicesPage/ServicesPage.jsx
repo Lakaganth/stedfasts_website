@@ -16,10 +16,9 @@ export const ServicesPage = () => {
               <p>Our Services</p>
               <p>
                 Our range of services support key stages of your supply chain
-                process, especially in the crucial Final Mile. While our main
-                area of Supply Chain focus is on the Final Mile, we have
-                dedicated teams that service First Mile and Mid Mile
-                requirements.
+                process, especially in the crucial Final Mile. While STP majorly
+                focuses on the Final Mile, we have dedicated teams handling
+                First Mile and Mid Mile requirements.
               </p>
             </div>
           </ScrollAnimation>

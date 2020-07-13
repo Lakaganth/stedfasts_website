@@ -14,10 +14,10 @@ export const AdvantagePage = () => {
           </ScrollAnimation>
           <ScrollAnimation animateIn="zoomIn" delay="600" animateOnce="true">
             <p className="content">
-              Our four key advantages are the pillars of excellence that set us
-              apart. We aim to deliver exceptional services to our clients so
-              they can extend the reach of their product and their brand, and
-              ultimately grow their business
+              Our four key points of interest are the pillars of excellence that
+              set us apart. We aim to provide outstanding administrations to our
+              customers so they can expand the scope of their product and their
+              brand, and ultimately develop their business.
             </p>
           </ScrollAnimation>
         </div>

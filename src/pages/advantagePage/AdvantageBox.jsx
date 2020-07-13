@@ -12,17 +12,17 @@ export const AdvantageBox = () => {
       <AdBoxAB
         AdImage={Advantage1}
         AdTitle="Coverage Area"
-        AdContent="Our own warehouse and exchange point locations are supplemented by vetted cross-dock and warehouse partners across the country, which allows our fleet of delivery vehicles to span from coast to coast. This unique advantage allows us to provide exceptional speed and service — no matter where your freight is headed."
+        AdContent="Our own distribution center and trade point areas are enhanced by screened cross-dock and stockroom across the country, which permits our delivery fleet to go around the country to meet the requirement. This one of a kind preferred position permits us to give excellent speed and administration — regardless of where your package is going."
       />
       <AdBoxBA
         AdImage={Advantage2}
         AdTitle="Quick Turnaround"
-        AdContent="Our specialized vehicle options, end-to-end services and superior staff all work to streamline the shipping and delivery process, so you'll see quicker turnaround times and delighted customers."
+        AdContent="Our specialists, well equipped vehicles and end-to-end services all work to simplify the shipping and delivery process, to make your customers delighted with quicker turnaround time."
       />
       <AdBoxAB
         AdImage={Advantage3}
         AdTitle="Full Visibility"
-        AdContent="Visibility helps to build trust. We use your technology integrated within our warehouse process — from route planning, to cabin optimization. This gives you a clear view of where your products are at in every stage of the delivery process. Track our turnaround times down to the minute so you can share complete and accurate status reports to your customer at all times."
+        AdContent="STP’s trustworthy real-time tracking shows the movement of your shipment and helps you to avoid any delays or missed transference. Our application enables you to receive real-time updates on the end-to-end tracking of your shipment as it travels downstream towards the destination"
       />
       <div className="advantage-4">
         <div className="content-div">
@@ -30,9 +30,10 @@ export const AdvantageBox = () => {
           <div className="content4">
             <p>Diversified Fleet</p>
             <p>
-              Get access to the vehicle options you need for your unique freight
-              product, at each stage in the shipment and delivery process. From
-              five-ton truck to a car — we have the wheels you need
+              STP’s diverse fleet options ensure your package is well taken care
+              of – regardless of your unique need. Our vehicle choices range
+              from 5-ton truck to a car to give the right level of care and the
+              fastest turnaround conceivable.
             </p>
           </div>
         </div>
