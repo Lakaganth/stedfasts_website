@@ -24,7 +24,7 @@ export const Footer = () => {
           </div>
           <div className="phone">
             <img src={Phone} alt="Phone" />
-            <p>1-416-201-1928</p>
+            <p>1-905-604-0910</p>
           </div>
         </SocialDiv>
         <AddressDiv>
