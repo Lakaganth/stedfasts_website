@@ -133,6 +133,21 @@ export const SerBox = styled.div`
       color: #ffb904;
     }
 
+    ${media.lessThan("small")`
+    p:nth-child(1) {
+      font-size: 32px;     
+    }
+    p:nth-child(2) {
+      font-size: 28px;
+     
+    }
+    p:nth-child(3) {
+     
+      font-size: 20px;
+      
+    }
+  `}
+
     p:nth-child(2) {
       font-size: 32px;
       line-height: 42px;
