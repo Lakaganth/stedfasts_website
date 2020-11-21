@@ -10,8 +10,8 @@ export const ServiceBoxPage = () => {
     <ServiceBoxPageContainer>
        <ServiceBoxBA
         serviceImage={Service5}
-        serviceTitle="Inter Province Goods Transportation"
-        serviceSubtitle="We help you transport your goods from one province to another swiftly"
+        serviceTitle="Goods Transportation"
+        serviceSubtitle="We help you transport your goods from one province to another and within cities swiftly"
         serviceText="Our highly skilled truck drivers ensure safe and timely delivery of your goods to your desired destination."
       />
       <ServiceBoxAB
