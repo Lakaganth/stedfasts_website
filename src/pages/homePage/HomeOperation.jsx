@@ -23,7 +23,7 @@ export const HomeOperation = () => {
         </ScrollAnimation>
         <OperationContent
           opTitle="Super-fast Delivery"
-          opContent="STP logistics assures delivery on priority across the country which is custom made for the seamless conveyance."
+          opContent="Stedfasts assures delivery on priority across the country which is custom made for the seamless conveyance."
         />
         <OperationContent
           opTitle="Deliver Documents & Packages"

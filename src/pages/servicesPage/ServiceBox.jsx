@@ -3,10 +3,17 @@ import { ServiceBoxPageContainer, SerBox } from "./ServiceStyles";
 import Service1 from "../../assets/service1.png";
 import Service2 from "../../assets/service2.png";
 import Service3 from "../../assets/service3.png";
+import Service5 from "../../assets/service5.png";
 
 export const ServiceBoxPage = () => {
   return (
     <ServiceBoxPageContainer>
+       <ServiceBoxBA
+        serviceImage={Service5}
+        serviceTitle="Inter Province Goods Transportation"
+        serviceSubtitle="We help you transport your goods from one province to another swiftly"
+        serviceText="Our highly skilled truck drivers ensure safe and timely delivery of your goods to your desired destination."
+      />
       <ServiceBoxAB
         serviceImage={Service1}
         serviceTitle=" Door step delivery"

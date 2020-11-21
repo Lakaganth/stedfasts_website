@@ -21,7 +21,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg1}
             QTitle="Secure Delivery"
-            Qdesc="STP delivers the best packed packages as well as provides assurance to deliver them safe and secured without any damage. "
+            Qdesc="Stedfasts delivers the best packed packages as well as provides assurance to deliver them safe and secured without any damage. "
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -33,7 +33,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg2}
             QTitle="Promised Delivery"
-            Qdesc="STP has carved out a specialty by focusing on delivering the packages on time as promised."
+            Qdesc="Stedfasts has carved out a specialty by focusing on delivering the packages on time as promised."
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -45,7 +45,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg3}
             QTitle="Best Pricing"
-            Qdesc="STP offer excellent products with customer focused pricing!"
+            Qdesc="Stedfasts offer excellent products with customer focused pricing!"
           />
         </ScrollAnimation>
         <ScrollAnimation
@@ -57,7 +57,7 @@ export const HomeQualityBox = () => {
           <QualityBoxes
             QImg={QImg4}
             QTitle="Complete Support"
-            Qdesc="STP provides a customer-centric approach to ensure that all of our clients are receiving best-in-class services."
+            Qdesc="Stedfasts provides a customer-centric approach to ensure that all of our clients are receiving best-in-class services."
           />
         </ScrollAnimation>
       </div>

@@ -60,7 +60,7 @@ export const HomePage = () => {
           <HomeFeatureBox
             featImg={Feat1}
             feattitle="On-time Delivery"
-            featDesc="STP helps you deliver your shipment on time across Canada. Let us know when and where, we'll do the rest."
+            featDesc="Stedfasts helps you deliver your shipment on time across Canada. Let us know when and where, we'll do the rest."
           />
           <HomeFeatureBox
             featImg={Feat2}

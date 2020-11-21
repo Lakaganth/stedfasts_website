@@ -16,9 +16,9 @@ export const ServicesPage = () => {
               <p>Our Services</p>
               <p>
                 Our range of services support key stages of your supply chain
-                process, especially in the crucial Final Mile. While STP majorly
-                focuses on the Final Mile, we have dedicated teams handling
-                First Mile and Mid Mile requirements.
+                process, especially in the crucial final mile. While Stedfasts majorly
+                focuses on the final mile, we have dedicated teams handling
+                first mile and mid mile requirements.
               </p>
             </div>
           </ScrollAnimation>

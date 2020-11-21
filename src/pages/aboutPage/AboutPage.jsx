@@ -13,7 +13,7 @@ export const AboutPage = () => {
           <p>
             When Canadian businesses need a reliable, cost-effective and
             traceable way to ship its packages and documents across Canada, the
-            call goes out to STP Logistics INC.
+            call goes out to STEDFASTS INC.
           </p>
         </div>
         <img className="about-hero-img" src={AboutBG} alt="About" />
@@ -23,8 +23,8 @@ export const AboutPage = () => {
             well structured foundation. This requires proper network of people,
             the right location and of course the right numbers. (It all comes
             down to the dollar sign). When it comes to shipping and receiving
-            packages it’s all about cheaper, faster and most reliable. Steadfast
-            meets all these requirements and so much more. STP Logistics Inc.
+            packages it’s all about cheaper, faster and most reliable. Stedfasts
+            meets all these requirements and so much more. Stedfasts Inc.
             recognizes the value in your business so we provide that extra value
             for your money.
           </p>
