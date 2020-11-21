@@ -24,7 +24,7 @@ export const ContactPage = () => {
           ON <br/>
           L4B 3G2<br/>
           <br/>
-         Phone :  1-416-201-1928
+         Phone : <br/>  1-416-201-1928
           </p>
         <div className="contact-form">
           <FormBox>
@@ -145,7 +145,11 @@ export const ContactContent = styled.div`
     line-height: 71px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 5vh 0vw;    
+    padding: 5vh 5vw;    
+    ${media.lessThan("small")`
+    font-size: 34px;
+    
+  `}
   }
   .contact-form {
     width: 40vw;
