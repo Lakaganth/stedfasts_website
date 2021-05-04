@@ -25,7 +25,7 @@ export const ContactPage = () => {
           ON <br />
           L3R 5M1
           <br />
-          Phone : <br /> 1-905-604-0910
+          Phone : <br /> 1-905-470-1928
         </p>
         <div className="contact-form">
           <FormBox>
