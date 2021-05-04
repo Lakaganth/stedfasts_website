@@ -18,14 +18,15 @@ export const ContactPage = () => {
       <ContactContent>
         <p className="title">Contact Us</p>
         <p className="details">
-          Stedfasts Inc <br />
-          95 Mural Street, 6th floor, <br/>
-          Richmond hill,<br />
-          ON <br/>
-          L4B 3G2<br/>
-          <br/>
-         Phone : <br/>  1-905-604-0910
-          </p>
+          STP Logistics Inc <br />
+          240 Riviera Drive, Unit #2 <br />
+          Markham,
+          <br />
+          ON <br />
+          L3R 5M1
+          <br />
+          Phone : <br /> 1-905-604-0910
+        </p>
         <div className="contact-form">
           <FormBox>
             <InputGroup>
@@ -139,13 +140,14 @@ export const ContactContent = styled.div`
     color: #ffb904;
     padding: 5vh 0vw;
   }
-  .details{ font-family: Red Hat Display;
-    font-style: normal;    
+  .details {
+    font-family: Red Hat Display;
+    font-style: normal;
     font-size: 54px;
     line-height: 71px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 5vh 5vw;    
+    color: #ffffff;
+    padding: 5vh 5vw;
     ${media.lessThan("small")`
     font-size: 34px;
     

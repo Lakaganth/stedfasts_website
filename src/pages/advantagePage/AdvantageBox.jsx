@@ -22,7 +22,7 @@ export const AdvantageBox = () => {
       <AdBoxAB
         AdImage={Advantage3}
         AdTitle="Full Visibility"
-        AdContent="Stedfasts trustworthy real-time tracking shows the movement of your shipment and helps you to avoid any delays or missed transference. Our application enables you to receive real-time updates on the end-to-end tracking of your shipment as it travels downstream towards the destination"
+        AdContent="STP Logistics trustworthy real-time tracking shows the movement of your shipment and helps you to avoid any delays or missed transference. Our application enables you to receive real-time updates on the end-to-end tracking of your shipment as it travels downstream towards the destination"
       />
       <div className="advantage-4">
         <div className="content-div">
@@ -30,10 +30,10 @@ export const AdvantageBox = () => {
           <div className="content4">
             <p>Diversified Fleet</p>
             <p>
-              Stedfasts diverse fleet options ensure your package is well taken care
-              of – regardless of your unique need. Our vehicle choices range
-              from 10-ton truck to a car to give the right level of care and the
-              fastest turnaround conceivable.
+              STP Logistics diverse fleet options ensure your package is well
+              taken care of – regardless of your unique need. Our vehicle
+              choices range from 10-ton truck to a car to give the right level
+              of care and the fastest turnaround conceivable.
             </p>
           </div>
         </div>

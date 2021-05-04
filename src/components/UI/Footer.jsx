@@ -24,21 +24,21 @@ export const Footer = () => {
           </div>
           <div className="phone">
             <img src={Phone} alt="Phone" />
-            <p>1-905-604-0910</p>
+            <p>1-905-470-1928</p>
           </div>
         </SocialDiv>
         <AddressDiv>
           <p>
-          Stedfasts Inc <br />
-          95 Mural Street, 6th floor, <br/>
-          Richmond hill,<br />
-          ON <br/>
-          L4B 3G2
-
+            STP Logistics Inc <br />
+            240 Riviera Drive, Unit #2 <br />
+            Markham,
+            <br />
+            ON <br />
+            L3R 5M1
           </p>
         </AddressDiv>
       </ContactGrid>
-      <p> &#169; Copyright Stedfasts Inc. 2020.</p>
+      <p> &#169; Copyright STP Logistics Inc. 2021.</p>
     </FooterContainer>
   );
 };

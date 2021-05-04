@@ -16,15 +16,15 @@ export const ServicesPage = () => {
               <p>Our Services</p>
               <p>
                 Our range of services support key stages of your supply chain
-                process, especially in the crucial final mile. While Stedfasts majorly
-                focuses on the final mile, we have dedicated teams handling
-                first mile and mid mile requirements.
+                process, especially in the crucial final mile. While STP
+                Logistics majorly focuses on the final mile, we have dedicated
+                teams handling first mile and mid mile requirements.
               </p>
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="slideInRight" delay={600}>
             <div className="hero-img">
-              <img src={ServiceHero} alt="STP Services" />
+              <img src={ServiceHero} alt="STP Logistics Services" />
             </div>
           </ScrollAnimation>
         </ServiceHeroContainer>
