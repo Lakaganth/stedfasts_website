@@ -52,7 +52,7 @@ export const HomeOperation = () => {
       </OperationGrid>
       <MobileOperationGrid>
         <ScrollAnimation animateIn="zoomInLeft">
-          <img srcf={Op1} alt="Fast Delivery" />
+          <img src={Op1} alt="Fast Delivery" />
         </ScrollAnimation>
         <OperationContent
           opTitle="Super-fast Delivery"
